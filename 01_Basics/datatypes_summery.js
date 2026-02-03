@@ -31,5 +31,34 @@ const myFunc = function(){
 console.log(typeof(isloginuser));
 
 
+//*********************  Stack And Heap Memoryes  */
+
+let myYoutubename = "sanketbhosale11575@gmail.com"
+
+let anothername = myYoutubename
+
+anothername = "sanketaurcode"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+
+// Heap Memory 
+
+let userone = {
+
+    name:"sanket",
+    upiId:4578,
+phoneNo:100 
+}
+
+
+let usertwo = userone 
+
+usertwo.phoneNo = 200 
+
+console.log(userone.phoneNo);
+console.log(usertwo.phoneNo);
+
 
 
