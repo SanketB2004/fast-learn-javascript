@@ -1,6 +1,6 @@
 // high order array loops 
 // for of 
-// const i = [1,2,3,4,5]
+//  const i = [1,2,3,4,5]
 // for (const num of i ) {
 //     console.log(num);
     
@@ -77,5 +77,31 @@ const coding = ["js" , "ruby" , "JAVA"]
 // coding.forEach(printMe)  // no use function direct pass function
 
 
+// 
+
+// coding.forEach((item , index , arr)=> { // access ahet he all cha
+//     console.log(item , index , arr);
+    
+// })
 
 
+//
+const myCoding = [
+    {
+        languageName:"javascript",
+        languageFileName:"js"
+    } ,
+    {
+        languageName:"py",
+        languageFileName:"py"
+    } ,
+    {
+        languageName:"html",
+        languageFileName:"html"
+    } ,
+]
+
+myCoding.forEach((itrm) =>{
+    console.log(itrm.languageFileName)
+    
+}) /// make books notes 
