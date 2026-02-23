@@ -31,30 +31,51 @@
 
 
 
-// my Object
+// // my Object
 
-const myObject = {
-    'game1':'NFS',
-    'game2': 'Pubg',
-    'game3':'Free Fire'
-}
+// const myObject = {
+//     'game1':'NFS',
+//     'game2': 'Pubg',
+//     'game3':'Free Fire'
+// }
 
-// for (const [key , value] of myObject) {
-//     console.log(key , ':-' ,value);
+// // for (const [key , value] of myObject) {
+// //     console.log(key , ':-' ,value);
+    
+// // }
+
+// // forin loop use object 
+
+// const myObj = {
+// js : 'javascript',
+// cpp:'c++',
+// rb:'ruby',
+// swift: 'swift by apple'}
+
+
+// for (const key in myObject) {
+//     console.log(`${key} shortcut is for ${myObject[key]}`);
     
 // }
 
-// forin loop use object 
 
-const myObj = {
-js : 'javascript',
-cpp:'c++',
-rb:'ruby',
-swift: 'swift by apple'}
+const coding = ["js" , "ruby" , "JAVA"]
 
-
-for (const key in myObject) {
-    console.log(`${key} shortcut is for ${myObject[key]}`);
+// coding.forEach((item) => {
+//     console.log(item);
     
-}
+// })
+
+
+// normal function make 
+
+// function printMe(item){
+//     console.log(item);
+    
+// } // referance 
+
+// coding.forEach(printMe)  // no use function direct pass function
+
+
+
 
