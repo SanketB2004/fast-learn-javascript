@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Dom Lerning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: tan;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">
+            Dom Lerning on youtube in chai aur code
+        </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, porro?</h2>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis numquam, repellat ullam ratione obcaecati perferendis? Maxime vel magnam nulla praesentium!</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+
+
+    </div>
+</body>
+</html>
+<!-- Node list Conver Chi Method Ahe  -->
+<!-- ✅ Method 1: Array.from() (Best & Easy)
+const liArray = Array.from(liList)
+console.log(liArray) -->
+
+<!-- ✔ आता liArray हा proper Array आहे. -->
+<!-- ✔ Array methods वापरू शकतो (map, filter, etc.) -->
+<!--
+🔹 1) <ul> select करणे
+const ul = document.querySelector("ul")
+console.log(ul)
+🔹 2) सर्व <li> select करणे
+const liList = document.querySelectorAll("li")
+console.log(liList)
+
+👉 हे NodeList देईल.
+
+पहिला <li>:
+
+console.log(liList[0])
+🔥 3) एका <li> ला style देणे
+const firstLi = document.querySelector("li")
+firstLi.style.color = "red"
+🔥 4) सर्व <li> ला style देणे
+const allLi = document.querySelectorAll("li")
+
+allLi.forEach(function(item){
+    item.style.backgroundColor = "yellow"
+})
+🔥 5) Text बदलणे
+const liItems = document.querySelectorAll("li")
+
+liItems[0].innerText = "HTML"
+liItems[1].innerText = "CSS"
+liItems[2].innerText = "JavaScript"
+🔥 6) Loop वापरून text बदलणे
+const liItems = document.querySelectorAll("li")
+
+liItems.forEach(function(item, index){
+    item.innerText = "Item " + (index + 1)
+})
+🔥 7) New <li> add करणे
+const newLi = document.createElement("li")
+newLi.innerText = "Four"
+
+const ul = document.querySelector("ul")
+ul.appendChild(newLi)
+🔥 8) <li> remove करणे
+const liItems = document.querySelectorAll("li")
+liItems[0].remove()
+🎯 Summary (const वापरून selectors)
+const ul = document.querySelector("ul")
+const li = document.querySelector("li")
+const allLi = document.querySelectorAll("li")
+-->
+
+<!-- const ul = document.querySelector("ul")
+console.log(ul)
+ul.querySelector('li') -->
+
+ <!-- 1st element manuplate web name = document.getElementbyid('yat id takayachi uniq').innerHtml = "<h1> yat name takayacha te change hoil </h1>" -->
+
+<!-- notes -->
+<!-- 
+🔹 1) ID Selector
+document.getElementById("title")
+
+👉 Output: <h1 id="title" class="heading">...</h1>
+
+Text बदलण्यासाठी:
+
+document.getElementById("title").innerText = "Hello JavaScript"
+
+Style बदलण्यासाठी:
+
+document.getElementById("title").style.color = "yellow"
+🔹 2) Class Selector
+document.getElementsByClassName("heading")
+
+👉 HTMLCollection मिळेल
+
+पहिला element access:
+
+document.getElementsByClassName("heading")[0]
+🔹 3) Tag Selector
+👉 सर्व <h2> select करणे:
+document.getElementsByTagName("h2")
+
+👉 HTMLCollection मिळेल
+
+पहिला <h2>:
+
+document.getElementsByTagName("h2")[0]
+🔹 4) querySelector (पहिला element select करतो)
+
+पहिला <h2>:
+
+document.querySelector("h2")
+
+ID वापरून:
+
+document.querySelector("#title")
+
+Class वापरून:
+
+document.querySelector(".heading")
+🔹 5) querySelectorAll (सर्व select करतो)
+
+सर्व <h2>:
+
+document.querySelectorAll("h2")
+
+👉 NodeList मिळेल
+
+पहिला <h2>:
+
+document.querySelectorAll("h2")[0]
+🔥 सर्व <h2> ला style apply करणे
+document.querySelectorAll("h2").forEach(function(item){
+    item.style.color = "red"
+})
+
+Background बदलण्यासाठी:
+
+document.querySelectorAll("h2").forEach(function(item){
+    item.style.backgroundColor = "white"
+})
+🔥 body ला class add/remove करणे
+document.body.classList.add("bg-black")
+
+remove:
+
+document.body.classList.remove("bg-black")
+
+toggle:
+
+document.body.classList.toggle("bg-black")
+🔹 Text बदलणे
+document.querySelector("p").innerText = "New Paragraph Text"
+
+HTML टाकण्यासाठी:
+
+document.querySelector("p").innerHTML = "<b>Bold Text</b>"
+🔹 Attribute मिळवणे / बदलणे
+document.querySelector("h1").getAttribute("id")
+document.querySelector("h1").setAttribute("class", "newClass")
+🎯 Difference लक्षात ठेव
+Method	काय return करतो
+getElementById	एक element
+getElementsByClassName	HTMLCollection
+getElementsByTagName	HTMLCollection
+querySelector	पहिला match
+querySelectorAll	NodeList -->
